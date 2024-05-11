@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-    <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".AddTaskActivity2">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity">
 
     <TextView
-        android:id="@+id/addTaskHeading"
+        android:id="@+id/editTaskHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="0dp"
-        android:text="Add Task"
+        android:text="Edit your Task"
         android:textColor="@color/main"
         android:textSize="24dp" />
 
     <ImageView
-        android:id="@+id/saveButton"
+        android:id="@+id/UpdateSaveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/baseline_check_24"
         android:layout_alignParentEnd="true"
-        android:layout_alignTop="@id/addTaskHeading"
+        android:layout_alignTop="@id/editTaskHeading"
         android:layout_marginEnd="6dp"
 
         />
 
 
     <EditText
-        android:id="@+id/titleEditText"
+        android:id="@+id/UpdateTitleEditText"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:hint="Enter the Title"
         android:padding="12dp"
         android:textSize="20dp"
-        android:layout_below="@+id/addTaskHeading"
+     android:layout_below="@id/editTaskHeading"
         android:background="@drawable/main_boarder"
         android:layout_marginTop="16dp"
         android:maxLines="1"
         android:fontFamily="@font/poppins"
         />
     <EditText
-        android:id="@+id/contentEditText"
+        android:id="@+id/UpdateContentEditText"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:hint="Enter the Description"
@@ -55,7 +55,7 @@
         android:textSize="18dp"
         android:fontFamily="@font/poppins"
         android:background="@drawable/main_boarder"
-        android:layout_below="@id/titleEditText"
+        android:layout_below="@id/UpdateTitleEditText"
         android:layout_marginTop="12dp"/>
 
 
